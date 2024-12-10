@@ -96,7 +96,7 @@ h1, h2, h3, h4 {
 }
 .tombol-aksi a {
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #18a558;
     border-radius: 10px;
     color: rgb(255, 255, 255);
@@ -482,11 +482,11 @@ tbody tr:nth-child(odd) {
 
 .footer {
     background:url(https://smkmadinatulquran.sch.id/wp-content/uploads/2021/08/topography-pattern-1.png);
-    background-color: #18a558;
+    background-color: #26c96f;
     font-weight: 700;
     color: #ffffff;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-container {
@@ -541,13 +541,12 @@ tbody tr:nth-child(odd) {
         gap: 20px;
         padding: 15px;
     }
-    table {
-        font-size: 12px; 
+    .kotak-program {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
     }
-
-    th, td {
-        padding: 8px; 
-    }
+   
     .mitra-akademik h3{
         text-align: center;
         margin: 0 auto;
@@ -581,24 +580,50 @@ tbody tr:nth-child(odd) {
         height: auto;
         margin: 0 auto;
     }
-
+    .kotak-program2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
     .program,
     .program2 {
-        width: 90%;
+        width: 70%;
         height: auto;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
     }
-
+    .program2 h2{
+        text-align: center;
+    }
+    .program,
+    .program2{
+        text-align: left;
+    }
     .program img,
     .program2 img {
-        width: 50px;
-        height: 50px;
+        width: 40%;
+        height: auto;
         margin-bottom: 10px;
     }
-
+    .program-description-atas, .program-description {
+        text-align: left;
+    }
+    .deksripsi-atas, .deksripsi-bawah, .deksripsi-jurusan, .deksripsi-content-atas {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .logo-mitra, .logo-mitra2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+    .mitra-akademik img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
     .deksripsi-content,
     .deksripsi-content-atas {
         flex-direction: column;
@@ -606,19 +631,27 @@ tbody tr:nth-child(odd) {
         padding: 20px;
     }
 
-    .deksripsi-content img,
-    .deksripsi-content-atas img {
-        width: 90%;
+    .deksripsi-jurusan img,
+    .deksripsi-jurusan-atas img {
+        width: 100%;
         margin: 10px auto;
     }
 
     .footer-container {
+        display: flex;
+        font-size: 14px;
         flex-direction: column;
-        align-items: baseline;
-        justify-content: left;
-        
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;   
+        padding: 20px;
     }
-
+    .footer-section h3 {
+        font-size: 16px; 
+    }
+    .footer-section p {
+        font-size: 12px; 
+    }
     .footer-section {
         text-align: left;
     }
@@ -629,16 +662,25 @@ tbody tr:nth-child(odd) {
     body {
         font-size: 14px;
     }
+    .teks h2 {
+        font-size: 20px;
+    }
+    .teks p {
+        font-size: 14px;
+    }
+    .footer-section h3 {
+        font-size: 16px;
+    }
+    .footer-section p {
+        font-size: 12px;
+    }
+    .kotak-program, .kotak-program2 {
+        grid-template-columns: 1fr; 
+    }
+
     .mitra-akademik h3{
         text-align: center;
         margin: 0 auto;
-    }
-    table {
-        font-size: 10px; 
-    }
-
-    th, td {
-        padding: 6px; 
     }
     .program-keahlian2 h3{
         text-align: center;
@@ -673,8 +715,8 @@ tbody tr:nth-child(odd) {
 
     .program img,
     .program2 img {
-        width: 40px;
-        height: 40px;
+        width: 100%;
+        height: auto;
     }
 
     .footer {
@@ -682,10 +724,16 @@ tbody tr:nth-child(odd) {
     }
 
     .footer-section h3 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .footer-section p {
+        font-size: 10px;
+    }
+    .footer-container {
+        text-align: left;
         font-size: 14px;
+        padding: 10px;
+
     }
 }

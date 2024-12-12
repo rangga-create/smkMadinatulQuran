@@ -521,3 +521,228 @@ tbody tr:nth-child(odd) {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
 }
+/* responsiv */
+/* Tablet dan Ponsel (≤ 768px) */
+@media (max-width: 768px) {
+    .kepala-halaman {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+    .kotak-program {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+  
+    .mitra-akademik h3{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .program-keahlian2 h3{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .menu-navigasi a {
+        margin-inline: 15px;
+        font-size: 16px;
+    }
+
+    .bagian-utama {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .teks h2 {
+        font-size: 28px;
+    }
+
+    .teks p {
+        font-size: 16px;
+    }
+
+    .bagian-utama img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .kotak-program2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    .program,
+    .program2 {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .program2 h2{
+        text-align: center;
+    }
+    .program,
+    .program2{
+        text-align: left;
+    }
+    .program img,
+    .program2 img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .program-description-atas, .program-description {
+        text-align: left;
+    }
+    .deksripsi-atas, .deksripsi-bawah, .deksripsi-jurusan, .deksripsi-content-atas {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .logo-mitra, .logo-mitra2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+    .mitra-akademik img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .deksripsi-content,
+    .deksripsi-content-atas {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .deksripsi-jurusan img,
+    .deksripsi-jurusan-atas img {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .footer-container {
+        display: flex;
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;   
+        padding: 20px;
+    }
+    .footer-section h3 {
+        font-size: 16px; 
+    }
+    .footer-section p {
+        font-size: 12px; 
+    }
+    .footer-section {
+        text-align: left;
+    }
+}
+
+/* Ponsel Kecil (≤ 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 8px;
+    }
+    .teks h2 {
+        font-size: 20px;
+    }
+    .teks p {
+        font-size: 14px;
+    }
+    .footer-section h3 {
+        font-size: 16px;
+    }
+    .footer-section p {
+        font-size: 12px;
+    }
+    .kotak-program2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    .program,
+    .program2 {
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .program2 h2{
+        text-align: center;
+    }
+    .program,
+    .program2{
+        text-align: left;
+    }
+
+    .mitra-akademik h3{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .program-keahlian2 h3{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .kepala-halaman {
+        padding: 10px;
+    }
+
+    .menu-navigasi a {
+        font-size: 14px;
+    }
+
+    .bagian-utama {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .teks h2 {
+        font-size: 24px;
+    }
+
+    .teks p {
+        font-size: 14px;
+    }
+
+    .bagian-utama img {
+        width: 100%;
+        height: auto;
+    }
+
+    .program img,
+    .program2 img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 14px;
+    }
+
+    .footer-section p {
+        font-size: 10px;
+    }
+    .footer-container {
+        text-align: left;
+        font-size: 14px;
+        padding: 10px;
+
+    }
+}
